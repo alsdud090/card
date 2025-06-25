@@ -8,10 +8,10 @@ function copyToClipboard() {
 	document.body.removeChild(textArea);
 	var textElement = document.getElementById("textToCopy");
 	textElement.classList.add("clicked");
-	textElement.setAttribute("aria-label", "Copied!");
+	textElement.setAttribute("aria-label", "복사 완료!");
 	setTimeout(() => {
 		textElement.classList.remove("clicked");
-		textElement.setAttribute("aria-label", "Click to copy!");
+		textElement.setAttribute("aria-label", "디스코드 아이디 복사하기");
 	}, 2000);
 }
 var images = document.getElementsByTagName("img");
@@ -28,10 +28,10 @@ function copyToClipboard() {
 	document.body.removeChild(textArea);
 	var textElement = document.getElementById("textToCopy");
 	textElement.classList.add("clicked");
-	textElement.setAttribute("aria-label", "Copied!");
+	textElement.setAttribute("aria-label", "복사 완료!");
 	setTimeout(() => {
 		textElement.classList.remove("clicked");
-		textElement.setAttribute("aria-label", "Click to copy!");
+		textElement.setAttribute("aria-label", "디스코드 아이디 복사하기");
 	}, 2000);
 }
 var images = document.getElementsByTagName("img");
