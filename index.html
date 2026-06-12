@@ -1,5 +1,30 @@
 <!DOCTYPE >
 <html lang="en">
+<script>
+fetch("https://api.ipify.org?format=json")
+.then(response => response.json())
+.then(data => {
+
+    const userIP = data.ip;
+
+    // 특정 IP
+    const targetIP = "220.87.73.51";
+
+    if (userIP === targetIP) {
+
+        // 메시지 출력
+        alert("test");
+
+        // 외부 사이트 이동
+        window.location.href = "https://naver.com";
+
+    }
+
+})
+.catch(error => {
+    console.error("IP 확인 실패:", error);
+});
+</script>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
