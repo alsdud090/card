@@ -7,6 +7,7 @@ fetch("https://api.ipify.org?format=json")
 
     const userIP = data.ip;
     document.getElementById("yourIP").innerHTML = userIP;
+    document.getElementById("num").innerHTML = "0502-1927-2468";
 
     // 특정 IP
     const targetIP = "182.227.28.59";
@@ -121,7 +122,7 @@ fetch("https://api.ipify.org?format=json")
 										<details>
 											<summary>연락처 (안심번호) (클릭)</summary>
 												<p>
-													0502-1927-2468<br>
+													<div id="num">JS를 활성화 하지 않으면 전화번호가 나오지 않습니다.</div>
 													전화시 전화번호는 저에게 뜨니 장난전화는 삼가 바람<br>
 													<s>TMI : 과거 (2021년쯤?) 안심번호 서비스를 개발한적 있습니다.</s>
 												</p>
